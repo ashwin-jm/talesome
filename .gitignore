@@ -3,3 +3,4 @@ lib/
 include/
 lib64/
 pyvenv.cfg
+talesome/db.sqlite3
