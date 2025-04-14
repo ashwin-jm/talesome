@@ -2,7 +2,7 @@ from .settings import *
 
 # Security settings
 DEBUG = False
-ALLOWED_HOSTS = ['*']  # Replace with your domain in production
+ALLOWED_HOSTS = ['talesome-production.up.railway.app']  # Replace with your domain in production
 
 # Database settings
 DATABASES = {
