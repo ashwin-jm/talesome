@@ -1,6 +1,41 @@
-bin/
-lib/
-include/
-lib64/
-pyvenv.cfg
+# Python
+talesome/__pycache__/
+talesome/*.py[cod]
+talesome/*$py.class
+talesome/*.so
+talesome/.Python
+talesome/env/
+talesome/build/
+talesome/develop-eggs/
+talesome/dist/
+talesome/downloads/
+talesome/eggs/
+talesome/.eggs/
+talesome/lib/
+talesome/lib64/
+talesome/parts/
+talesome/sdist/
+talesome/var/
+talesome/*.egg-info/
+talesome/.installed.cfg
+talesome/*.egg
+
+# Django
+talesome/*.log
+talesome/local_settings.py
 talesome/db.sqlite3
+talesome/db.sqlite3-journal
+talesome/media/
+
+# Environment variables
+talesome/.env
+
+# IDE
+talesome/.idea/
+talesome/.vscode/
+talesome/*.swp
+talesome/*.swo
+
+# OS
+talesome/.DS_Store
+talesome/Thumbs.db
