@@ -3,7 +3,7 @@ from .settings import *
 # Security settings
 DEBUG = True
 CSRF_TRUSTED_ORIGINS = ['https://talesome-production.up.railway.app']
-ALLOWED_HOSTS = ['talesome-production.up.railway.app']  # Replace with your domain in production
+ALLOWED_HOSTS = ['https://talesome-production.up.railway.app']  # Replace with your domain in production
 
 # Database settings
 DATABASES = {
