@@ -1,7 +1,8 @@
 from .settings import *
 
 # Security settings
-DEBUG = False
+DEBUG = True
+CSRF_TRUSTED_ORIGINS = ['https://talesome-production.up.railway.app']
 ALLOWED_HOSTS = ['talesome-production.up.railway.app']  # Replace with your domain in production
 
 # Database settings
