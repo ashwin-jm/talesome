@@ -5,6 +5,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
 from .models import Post
+#Adding for deployment
 
 def home(request):
     return render(request, 'core/home.html')
