@@ -1,1 +1,2 @@
-web: python manage.py collectstatic --noinput && gunicorn talesome.wsgi --log-file - 
+release: ./migrate.sh
+web: gunicorn talesome.wsgi --log-file - 
