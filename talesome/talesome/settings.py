@@ -169,7 +169,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 DEBUG = True
 CSRF_TRUSTED_ORIGINS = [
-    'https://talesome-production.up.railway.app',
+    'https://talesome-product.up.railway.app',
 ]
 DATABASES = {
     'default': {
