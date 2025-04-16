@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
-from django.contrib.auth import login as auth_login
+from django.contrib.auth import login as auth_login, logout as auth_logout
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm
@@ -30,6 +30,8 @@ def register(request):
             auth_login(request, user)  # Auto-login after registration
             username = form.cleaned_data.get('username')
             messages.success(request, f"Account created for {username}!")
+            # Create a new empty form instance
+            form = UserRegisterForm()
             return redirect('profile')
     else:
         form = UserRegisterForm()
@@ -47,3 +49,8 @@ def profile(request):
         'posts': user_posts
     }
     return render(request, 'core/profile.html', context)
+
+def logout(request):
+    auth_logout(request)
+    messages.info(request, "You have been logged out successfully.")
+    return redirect('home')
